@@ -1,0 +1,130 @@
+/* ==============================
+   Base Styles
+   ============================== */
+:root {
+  --primary: #5465ff;
+  --secondary: #788bff;
+  --accent: #9bb1ff;
+  --background: #e2fdff;
+  --card-bg: #ffffff;
+  --text: #333;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==============================
+   Header
+   ============================== */
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ==============================
+   Main Layout
+   ============================== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==============================
+   Cards
+   ============================== */
+.card {
+  background: var(--card-bg);
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px var(--shadow);
+}
+
+.card h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.card img {
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  display: block;
+  max-width: 100%;
+}
+
+.card ul {
+  list-style-type: "✨ ";
+  padding-left: 1.2rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
