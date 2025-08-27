@@ -1,14 +1,15 @@
-/* ==============================
-   Base Styles
-   ============================== */
+ /* ==============================
+   Base Styles
+   ============================== */
 :root {
-  --primary: #5465ff;
-  --secondary: #788bff;
-  --accent: #9bb1ff;
-  --background: #e2fdff;
-  --card-bg: #ffffff;
-  --text: #333;
-  --shadow: rgba(0, 0, 0, 0.1);
+--primary: #5A5D9D;
+  --secondary: #90A0C0;
+--accent: #F4D35E;
+--background-main: #FFFFFF;
+--background-body: #E4E5F1;
+--card-bg: #FFFFFF;
+--text: #333;
+--shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -18,9 +19,9 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Avenir Next", "Avenir", sans-serif;
   line-height: 1.6;
-  background: var(--background);
+  background: var(--background-body);
   color: var(--text);
   display: flex;
   flex-direction: column;
@@ -28,31 +29,37 @@ body {
 }
 
 /* ==============================
-   Header
-   ============================== */
+   Header
+   ============================== */
 header {
-  background: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  box-shadow: 0 4px 6px var(--shadow);
+background: var(--primary);
+color: white;
+text-align: center;
+padding: 2rem 1rem;
+box-shadow: 0 4px 6px var(--shadow);
 }
 
 header h1 {
-  font-size: 1.8rem;
+font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
+header h1, header nav {
+max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
-  margin-top: 0.5rem;
+margin-top: 0.5rem;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0.5rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+color: var(--background-main);
+text-decoration: none;
+margin: 0 0.8rem;
+font-weight: bold;
+transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -60,71 +67,108 @@ nav a:hover {
 }
 
 /* ==============================
-   Main Layout
-   ============================== */
+   Main Layout
+   ============================== */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 2rem;
+  padding: 2rem;
   flex: 1;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.2fr 1fr;
   }
 }
 
 /* ==============================
-   Cards
-   ============================== */
+   Cards
+   ============================== */
 .card {
-  background: var(--card-bg);
-  padding: 1.2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+background: var(--card-bg);
+padding: 2rem;
+border-radius: 12px;
+box-shadow: 0 4px 10px var(--shadow);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px var(--shadow);
+transform: translateY(-5px);
+box-shadow: 0 8px 15px var(--shadow);
 }
 
 .card h2 {
-  color: var(--primary);
-  margin-bottom: 1rem;
+color: var(--primary);
+margin-bottom: 1.5rem;
+text-align: center;
 }
 
 .card img {
-  border-radius: 10px;
-  margin: 0.5rem 0;
-  display: block;
-  max-width: 100%;
+border-radius: 10px;
+margin: 1rem auto;
+display: block;
+max-width: 100%;
+}
+
+.card p {
+text-align: center;
+margin-bottom: 1rem;
 }
 
 .card ul {
-  list-style-type: "✨ ";
-  padding-left: 1.2rem;
+list-style-type: none;
+padding-left: 1.2rem;
+max-width: 300px;
+margin: 0 auto;
+}
+
+.card ul li::before {
+  content: "* ";
+  margin-right: 0.3rem;
 }
 
 .card ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 /* ==============================
-   Footer
-   ============================== */
+   Button
+   ============================== */
+.button {
+display: block;
+width: fit-content;
+margin: 1.5rem auto;
+padding: 0.75rem 1.5rem;
+background-color: var(--accent);
+color: var(--primary);
+border: none;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+background-color: #fddb69; /* A slightly lighter shade of accent */
+transform: scale(1.05);
+}
+
+/* ==============================
+   Footer
+   ============================== */
 footer {
   background: var(--secondary);
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   margin-top: auto;
 }
 
 footer p {
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
   font-size: 0.9rem;
 }
