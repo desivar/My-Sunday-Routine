@@ -5,9 +5,7 @@ Welcome to the **Enhanced Sunday Church Trip** project! This interactive simple 
 
 ## Live Demo 
 
-Check out the live demo of the project [here](https://your-live-demo-link.com) <!-- Replace with your live demo link -->
-
-## Table of Contents
+Check out the live demo of the project [here](https://desivar.github.io/My-Sunday-Routine/sundayroutine.html)
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
