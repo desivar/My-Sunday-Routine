@@ -33,4 +33,4 @@ Check out the live demo of the project [here](https://desivar.github.io/My-Sunda
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/desivar/My-Sunday-Routine
