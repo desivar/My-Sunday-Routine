@@ -1,7 +1,7 @@
 # Enhanced Sunday Church Trip
 
 Welcome to the **Enhanced Sunday Church Trip** project! This interactive simple game is designed to help users prepare for their Sunday church routine in a fun and engaging way. Users can collect essential items like keys, purse, and phone, and embark on a virtual journey to church. As a developer you could learn some keys to make animations.
-![Project Screenshot](https://via.placeholder.com/800x400) <!-- Replace with your project image URL -->
+![Project Screenshot](https://github.com/desivar/My-Sunday-Routine/blob/main/images/Screenshot%202025-08-28%20062341.png)
 
 ## Live Demo 
 
@@ -33,4 +33,4 @@ Check out the live demo of the project [here](https://desivar.github.io/My-Sunda
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/enhanced-sunday-church-trip.git
+   git clone 
