@@ -1,6 +1,11 @@
 # Enhanced Sunday Church Trip
 
-Welcome to the **Enhanced Sunday Church Trip** project! This interactive web application is designed to help users prepare for their Sunday church routine in a fun and engaging way. Users can collect essential items like keys, purse, and phone, and embark on a virtual journey to church.
+Welcome to the **Enhanced Sunday Church Trip** project! This interactive simple game is designed to help users prepare for their Sunday church routine in a fun and engaging way. Users can collect essential items like keys, purse, and phone, and embark on a virtual journey to church. As a developer you could learn some keys to make animations.
+![Project Screenshot](https://via.placeholder.com/800x400) <!-- Replace with your project image URL -->
+
+## Live Demo 
+
+Check out the live demo of the project [here](https://your-live-demo-link.com) <!-- Replace with your live demo link -->
 
 ## Table of Contents
 
